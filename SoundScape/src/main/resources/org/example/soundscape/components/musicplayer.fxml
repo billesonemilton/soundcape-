@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefWidth="1000.0" spacing="15.0" styleClass="container" stylesheets="@../stylesheets/musicplayer.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.MusicPlayerController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="150.0">
+         <children>
+            <ImageView fx:id="albumCover" fitHeight="150.0" fitWidth="170.0" pickOnBounds="true" />
+         </children>
+      </StackPane>
+      <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="306.0" spacing="5.0">
+         <children>
+            <Label fx:id="songTitle" prefHeight="22.0" prefWidth="226.0" styleClass="labels" text="Song name" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="artistName" prefHeight="18.0" prefWidth="227.0" styleClass="labels" text="Artist name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets left="25.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="150.0" prefWidth="529.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="566.0">
+               <children>
+                  <Slider fx:id="songProgress" prefHeight="27.0" prefWidth="470.0" styleClass="progress" HBox.hgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Slider>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="530.0">
+               <children>
+                  <Label fx:id="startDuration" styleClass="labels" text="00:00" />
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Label fx:id="endDuration" styleClass="labels" text="00:00" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="566.0">
+               <children>
+                  <Button fx:id="likeSong" mnemonicParsing="false" styleClass="iconButton" HBox.hgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIcon id="heart-icon" fx:id="heartIcon" glyphName="HEART_ALT" size="2em" styleClass="icon" />
+                     </graphic></Button>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" spacing="25.0">
+                     <children>
+                        <Button fx:id="previousSong" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="47.0" styleClass="iconButton">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <FontAwesomeIcon glyphName="BACKWARD" size="2em" styleClass="icon" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="pauseResume" mnemonicParsing="false" styleClass="iconButton">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <FontAwesomeIcon fx:id="pauseResumeIcon" glyphName="PAUSE" size="2em" styleClass="icon" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="nextSong" mnemonicParsing="false" styleClass="iconButton">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <FontAwesomeIcon glyphName="FORWARD" size="2em" styleClass="icon" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="loopSong" mnemonicParsing="false" styleClass="iconButton">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIcon id="loop-icon" fx:id="loopIcon" glyphName="REPEAT" size="2em" styleClass="icon" />
+                     </graphic></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <padding>
+      <Insets right="50.0" />
+   </padding>
+</HBox>

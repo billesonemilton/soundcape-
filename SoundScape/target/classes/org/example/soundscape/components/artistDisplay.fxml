@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="215.0" prefWidth="175.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.ArtistDisplayController">
+   <children>
+      <ImageView fx:id="artistPicture" fitHeight="175.0" fitWidth="175.0" pickOnBounds="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <Label fx:id="artistName" alignment="CENTER" contentDisplay="TOP" layoutX="8.0" layoutY="182.0" prefHeight="18.0" prefWidth="158.0" text="Artist name" />
+   </children>
+</AnchorPane>

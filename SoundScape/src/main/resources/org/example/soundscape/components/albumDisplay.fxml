@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="235.0" prefWidth="175.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.AlbumDisplayController">
+   <children>
+      <ImageView fx:id="albumCover" fitHeight="175.0" fitWidth="175.0" pickOnBounds="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <Label fx:id="albumName" layoutX="10.0" layoutY="180.0" maxWidth="-Infinity" prefHeight="27.0" prefWidth="150.0" text="Album name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="releaseDate" layoutX="10.0" layoutY="200.0" prefHeight="21.0" prefWidth="132.0" text="2024" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.AdminArtistsController">
+   <children>
+      <TableView fx:id="artistTable" layoutX="163.0" layoutY="88.0" prefHeight="281.0" prefWidth="678.0">
+         <columns>
+            <TableColumn fx:id="columnArtistID" prefWidth="133.6000518798828" text="artistID" />
+            <TableColumn fx:id="columnartistName" minWidth="0.0" prefWidth="113.5999755859375" text="artistName" />
+         </columns>
+      </TableView>
+      <Label layoutX="159.0" layoutY="33.0" prefHeight="37.0" prefWidth="210.0" text="Artists">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="artistNameInput" layoutX="160.0" layoutY="608.0" prefHeight="38.0" prefWidth="198.0" promptText="artist name" />
+      <StackPane layoutX="159.0" layoutY="391.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="artistPictureView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+      <Button layoutX="626.0" layoutY="426.0" mnemonicParsing="false" onAction="#getImageFromUser" prefHeight="44.0" prefWidth="214.0" text="Choose Image" />
+      <Button layoutX="626.0" layoutY="516.0" mnemonicParsing="false" onAction="#deleteButtonHandle" prefHeight="44.0" prefWidth="214.0" text="Delete" />
+      <Button layoutX="626.0" layoutY="615.0" mnemonicParsing="false" onAction="#addButtonHandle" prefHeight="44.0" prefWidth="214.0" text="Submit" />
+      <TextField fx:id="search" layoutX="628.0" layoutY="40.0" prefHeight="30.0" prefWidth="209.0" />
+      <TextField fx:id="artistIDInput" layoutX="160.0" layoutY="659.0" prefHeight="38.0" prefWidth="198.0" promptText="artist id" />
+   </children>
+</AnchorPane>

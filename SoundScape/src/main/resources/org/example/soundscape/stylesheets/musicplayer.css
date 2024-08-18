@@ -1,0 +1,30 @@
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.container {
+    /*-fx-background-color: linear-gradient(to bottom , #f3a827, #a16b05);*/
+    -fx-background-color: linear-gradient(to bottom right , #285352, #01302e)
+}
+.iconButton {
+    -fx-background-color: transparent;
+
+}
+.icon {
+    -fx-fill: #a3a3a3;
+}
+#heart-icon {
+    -fx-fill: #ff7591;
+}
+#loop-icon {
+    -fx-fill: #dd9100;
+}
+.labels {
+    -fx-text-fill: #c8c8c8;
+}
+.progress .track {
+    -fx-background-color: #a3a3a3;
+}
+.progress .fill-track {
+    -fx-background-color: #dd9100;
+}

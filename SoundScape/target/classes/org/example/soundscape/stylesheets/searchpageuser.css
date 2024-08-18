@@ -1,0 +1,11 @@
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.button {
+    -fx-background-color: rgba(250, 151, 70, 0.2);
+    -fx-text-fill: #e3670f;
+    -fx-background-radius: 5px;
+    -fx-padding: 2.5px;
+    -fx-font-size: 15px;
+}

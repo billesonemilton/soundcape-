@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@./stylesheets/auth.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.AuthController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="450.0" styleClass="left-side">
+         <children>
+            <Label alignment="CENTER" layoutX="57.0" layoutY="320.0" prefHeight="46.0" prefWidth="335.0" styleClass="brand-name" text="SOUNDSCAPE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="switchtosignup" alignment="CENTER" layoutX="66.0" layoutY="538.0" prefHeight="25.0" prefWidth="58.0" styleClass="micro-action" text="sign up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="switchtologin" alignment="CENTER" layoutX="325.0" layoutY="538.0" prefHeight="25.0" prefWidth="58.0" styleClass="micro-action" text="login">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fx:id="logo" fitHeight="262.0" fitWidth="272.0" layoutX="92.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" styleClass="left-side">
+               <image>
+                  <Image url="@images/logo-white.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <StackPane layoutX="450.0" prefHeight="600.0" prefWidth="450.0">
+         <children>
+            <AnchorPane fx:id="loginpage" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="98.0" layoutY="110.0" prefHeight="46.0" prefWidth="253.0" styleClass="headings" text="LOGIN">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="loginUsername" layoutX="58.0" layoutY="241.0" prefHeight="40.0" prefWidth="335.0" promptText="username" />
+                  <PasswordField fx:id="loginPassword" layoutX="58.0" layoutY="327.0" prefHeight="40.0" prefWidth="335.0" promptText="password" />
+                  <Button fx:id="loginButton" layoutX="58.0" layoutY="416.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="335.0" text="LOGIN">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signuppage" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Label alignment="CENTER" layoutX="98.0" layoutY="110.0" prefHeight="46.0" prefWidth="253.0" styleClass="headings" text="SIGN UP">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="signupUsername" layoutX="58.0" layoutY="241.0" prefHeight="40.0" prefWidth="335.0" promptText="username" />
+                  <PasswordField fx:id="signupPassword" layoutX="58.0" layoutY="327.0" prefHeight="40.0" prefWidth="335.0" promptText="password" />
+                  <Button fx:id="signupbutton" layoutX="58.0" layoutY="416.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="335.0" text="SIGN UP" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

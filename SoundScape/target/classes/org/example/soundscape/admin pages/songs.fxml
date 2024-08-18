@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.AdminSongsController">
+    <children>
+        <TableView fx:id="songTable" layoutX="159.0" layoutY="107.0" prefHeight="281.0" prefWidth="678.0">
+            <columns>
+                <TableColumn fx:id="columnSongID" prefWidth="224.79998779296875" text="Song ID" />
+                <TableColumn fx:id="columnSongName" minWidth="0.0" prefWidth="252.79995727539062" text="Song Name" />
+                <TableColumn fx:id="columnAlbumID" prefWidth="199.20001220703125" text="Album ID" />
+            </columns>
+        </TableView>
+        <Label layoutX="155.0" layoutY="52.0" prefHeight="37.0" prefWidth="210.0" text="Songs">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="songNameInput" layoutX="166.0" layoutY="431.0" prefHeight="38.0" prefWidth="198.0" promptText="Song Name" />
+        <Button layoutX="156.0" layoutY="527.0" mnemonicParsing="false" onAction="#getAudioFromUser" prefHeight="44.0" prefWidth="214.0" text="Choose Audio" />
+        <Button layoutX="395.0" layoutY="527.0" mnemonicParsing="false" onAction="#deleteButtonHandle" prefHeight="44.0" prefWidth="214.0" text="Delete" />
+        <Button layoutX="629.0" layoutY="527.0" mnemonicParsing="false" onAction="#addButtonHandle" prefHeight="44.0" prefWidth="214.0" text="Submit" />
+        <TextField fx:id="songSearchInput" layoutX="624.0" layoutY="59.0" prefHeight="30.0" prefWidth="209.0" promptText="Search Song Name" />
+        <TextField fx:id="songIDInput" layoutX="387.0" layoutY="431.0" prefHeight="38.0" prefWidth="198.0" promptText="Song ID" />
+        <TextField fx:id="albumSearchInput" layoutX="623.0" layoutY="410.0" prefHeight="30.0" prefWidth="209.0" promptText="Search Album ID" />
+        <ComboBox fx:id="albumIDComboBox" layoutX="624.0" layoutY="460.0" onAction="#setInputtedAlbumID" prefHeight="26.0" prefWidth="210.0" />
+        <Label fx:id="selectedAlbumID" layoutX="628.0" layoutY="496.0" prefHeight="18.0" prefWidth="198.0" />
+      <Pane fx:id="playerPane" layoutY="599.0" prefHeight="150.0" prefWidth="1000.0" />
+    </children>
+</AnchorPane>

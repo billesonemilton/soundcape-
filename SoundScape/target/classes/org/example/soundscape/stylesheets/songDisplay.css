@@ -1,0 +1,16 @@
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.container {
+    -fx-background-color: white;
+    -fx-background-radius: 7.5px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 7.5px;
+    -fx-border-color: #e3e3e3;
+}
+
+.container:hover .label {
+    -fx-text-fill: #e3670f;
+}

@@ -1,0 +1,28 @@
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.left-side {
+    -fx-background-color: linear-gradient(to bottom right, #f89442, #cc5500);
+}
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #fa9746, #e3670f);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+.headings {
+    -fx-text-fill: orange;
+    -fx-font-size: 36px;
+}
+.brand-name {
+    -fx-text-fill: white;
+}
+.micro-action {
+    -fx-text-fill: white;
+    -fx-border-width: 0 0 2px 0;
+    -fx-padding: .5px .5px 2.5px .5px;
+}
+.micro-action:hover {
+    -fx-border-color: white;
+}

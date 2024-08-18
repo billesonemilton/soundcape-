@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="73.0" prefWidth="900.0" styleClass="container" stylesheets="@../stylesheets/songDisplay.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.soundscape.SongDisplayController">
+   <children>
+      <Label fx:id="songName" layoutX="35.0" prefHeight="73.0" prefWidth="230.0" text="Song name" />
+      <Label fx:id="artistName" layoutX="330.0" prefHeight="73.0" prefWidth="165.0" text="Artist name" />
+      <Label fx:id="songRelease" layoutX="566.0" prefHeight="73.0" prefWidth="92.0" text="2024">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Label>
+      <Label fx:id="songDuration" layoutX="755.0" prefHeight="73.0" prefWidth="72.0" text="00:00">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

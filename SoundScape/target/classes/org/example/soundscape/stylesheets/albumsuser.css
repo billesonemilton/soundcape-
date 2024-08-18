@@ -1,0 +1,18 @@
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.button-icon {
+    -fx-fill: white;
+}
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #fa9746, #e3670f);
+    -fx-text-fill: white;
+}
+.header {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #e3e3e3;
+}
